@@ -8,6 +8,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text('Salom! Men sizning yangi botingizman.')
 
 def main() -> None:
+    print("Main ishga tushdi!")
     # Bot tokenini o'zgartiring
     application = Application.builder().token(token).build()
 
@@ -17,3 +18,4 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
+    print("Bot ishga tushdi!")
